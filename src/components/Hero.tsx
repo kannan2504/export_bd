@@ -1,6 +1,6 @@
 import { ArrowRight, Anchor, Globe, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-image.jpeg";
+import heroImage from "@/assets/ship.gif";
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
           alt="Shipping containers at port"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,50%,20%)]/95 via-[hsl(215,50%,20%)]/80 to-[hsl(215,50%,20%)]/60" />
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,50%,20%)]/95 via-[hsl(215,50%,20%)]/80 to-[hsl(215,50%,20%)]/60" /> */}
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
