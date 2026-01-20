@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Menu, X, Phone, Mail, Ship } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -11,25 +11,28 @@ const Header = () => {
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
   ];
+  const menuRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // If click is outside menu and menu is open, close it
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    // Add listener
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Cleanup
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md shadow-sm">
       {/* Top bar */}
-      <div className="hidden md:block bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex items-center gap-6">
-            <a href="tel:+1234567890" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <Phone className="w-4 h-4" />
-              <span>+91 99403 70080</span>
-            </a>
-            <a href="mailto:info@oceanfreight.com" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <Mail className="w-4 h-4" />
-              <span>info@gmail.com</span>
-            </a>
-          </div>
-          <span>Your Trusted Partner in Global Shipping</span>
-        </div>
-      </div>
+
 
       {/* Main nav */}
       <nav className="container mx-auto px-4 py-4">
@@ -72,7 +75,10 @@ const Header = () => {
 
         {/* Mobile Nav */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-border pt-4 animate-in slide-in-from-top-2">
+          <div
+            ref={menuRef}   // <-- add this
+            className="lg:hidden mt-4 pb-4 border-t border-border pt-4 animate-in slide-in-from-top-2"
+          >
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
@@ -90,6 +96,7 @@ const Header = () => {
             </div>
           </div>
         )}
+
       </nav>
     </header>
   );

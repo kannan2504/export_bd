@@ -42,7 +42,16 @@ const About = () => {
             </div>
 
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -right-4 md:right-8 bg-card p-6 rounded-xl shadow-xl border border-border max-w-[240px] ">
+            <div className=" floating-button
+  absolute
+  -bottom-4 -right-2
+  md:-bottom-6 md:right-8
+  bg-card
+  border border-border
+  shadow-xl
+  rounded-xl
+  p-3 md:p-6
+  max-w-[180px] md:max-w-[240px]">
               <div className="text-4xl font-bold text-primary mb-1">10+</div>
               <p className="text-muted-foreground text-sm">
                 Years of excellence in shipping & logistics
