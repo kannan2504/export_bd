@@ -82,7 +82,7 @@ const Hero = () => {
         >
           <source src={heroImage} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,50%,20%)]/95 via-[hsl(215,50%,20%)]/80 to-[hsl(215,50%,20%)]/60" />
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,50%,20%)]/95 via-[hsl(215,50%,20%)]/80 to-[hsl(215,50%,20%)]/60" /> */}
       </div>
 
     </section>
