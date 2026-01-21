@@ -29,7 +29,7 @@ const services = [
   {
     icon: Ship,
     title: "Sea Shipment",
-    description: "Reliable ocean freight services with competitive rates and flexible scheduling.",
+    description: "Reliable pioneer implex services with competitive rates and flexible scheduling.",
   },
   {
     icon: FileCheck,

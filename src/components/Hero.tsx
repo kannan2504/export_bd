@@ -1,19 +1,10 @@
 import { ArrowRight, Anchor, Globe, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/photo3.jpeg";
+import heroImage from "@/assets/shipcom.webp";
 
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-12 md:pt-20 pb-6">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Shipping containers at port"
-          className="w-full h-full object-cover"
-        />
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,50%,20%)]/95 via-[hsl(215,50%,20%)]/80 to-[hsl(215,50%,20%)]/60" /> */}
-      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
@@ -52,21 +43,21 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-lg">
             <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-white/10 rounded-lg mb-2 mx-auto backdrop-blur-sm">
+              <div className="flex items-center justify-center w-12 h-12 bg-white/10 rounded-lg mb-2 mx-auto ">
                 <Package className="w-6 h-6 text-secondary" />
               </div>
               <p className="text-2xl md:text-3xl font-bold text-white">100+</p>
               <p className="text-xs md:text-sm text-white/60">Shipments/Year</p>
             </div>
             <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-white/10 rounded-lg mb-2 mx-auto backdrop-blur-sm">
+              <div className="flex items-center justify-center w-12 h-12 bg-white/10 rounded-lg mb-2 mx-auto ">
                 <Globe className="w-6 h-6 text-secondary" />
               </div>
               <p className="text-2xl md:text-3xl font-bold text-white">10+</p>
               <p className="text-xs md:text-sm text-white/60">Years Experience</p>
             </div>
             <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-white/10 rounded-lg mb-2 mx-auto backdrop-blur-sm">
+              <div className="flex items-center justify-center w-12 h-12 bg-white/10 rounded-lg mb-2 mx-auto ">
                 <Anchor className="w-6 h-6 text-secondary" />
               </div>
               <p className="text-2xl md:text-3xl font-bold text-white">100%</p>
@@ -75,6 +66,30 @@ const Hero = () => {
           </div>
         </div>
       </div>
+            {/* Background */}
+     
+
+       <div className="absolute inset-0 z-0">
+        {/* <img
+          loading="eager"
+          src={heroImage}
+          alt="Shipping containers at port"
+          className="w-full h-full object-cover"
+        /> */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="none"
+          poster="/shipcom.webp"
+          className="w-full h-full object-cover"
+        >
+          <source src={heroImage} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,50%,20%)]/95 via-[hsl(215,50%,20%)]/80 to-[hsl(215,50%,20%)]/60" />
+      </div>
+
     </section>
   );
 };

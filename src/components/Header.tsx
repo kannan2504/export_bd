@@ -42,7 +42,7 @@ const Header = () => {
               <Ship className="w-8 h-8 text-primary-foreground" />
             </div>
             <div>
-              <span className="text-xl md:text-2xl font-bold text-foreground font-serif">Pioneer Associates</span>
+              <span className="text-xl md:text-2xl font-bold text-foreground font-serif">Pioneer Impex</span>
               <p className="text-xs text-muted-foreground  sm:block">Logistics Services</p>
             </div>
           </a>

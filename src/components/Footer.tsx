@@ -35,7 +35,7 @@ const Footer = () => {
               <div className="bg-primary p-2 rounded-lg">
                 <Ship className="w-6 h-6 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold font-serif">OceanFreight</span>
+              <span className="text-xl font-bold font-serif">Pioneer Impex</span>
             </a>
             <p className="text-white/70 mb-6 leading-relaxed">
               Your trusted partner for seamless China to India shipping and customs
@@ -90,7 +90,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
-                <span className="text-white/70">123 Port Road, Chennai, Tamil Nadu, India 600001</span>
+                <span className="text-white/70">11/1, Kutty Street, 2nd floor,Sevenwells,Chennai,Tamil Nadu, India - 600001.</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary flex-shrink-0" />
@@ -100,7 +100,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="mailto:info@oceanfreight.com" className="text-white/70 hover:text-white transition-colors">
+                <a href="mailto:info@gmail.com" className="text-white/70 hover:text-white transition-colors">
                   info@gmail.com
                 </a>
               </li>
@@ -114,7 +114,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center">
             <p className="text-white/60 text-sm">
-              © {currentYear} OceanFreight. All rights reserved.
+              © {currentYear} Pioneer Impex. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-white/60 hover:text-white transition-colors">

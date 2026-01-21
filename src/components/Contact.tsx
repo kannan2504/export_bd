@@ -229,7 +229,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      details: ["123 Port Road, Chennai", "Tamil Nadu, India 600001"],
+      details: ["1/1, Kutty Street, 2nd floor,Sevenwells,Chennai,", "Tamil Nadu, India 600001"],
     },
     {
       icon: Clock,
