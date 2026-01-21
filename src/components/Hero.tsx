@@ -1,6 +1,6 @@
 import { ArrowRight, Anchor, Globe, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/shipcom.webp";
+import heroImage from "@/assets/ship.mp4";
 
 const Hero = () => {
   return (
