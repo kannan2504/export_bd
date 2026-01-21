@@ -66,16 +66,11 @@ const Hero = () => {
           </div>
         </div>
       </div>
-            {/* Background */}
-     
+      {/* Background */}
 
-       <div className="absolute inset-0 z-0">
-        {/* <img
-          loading="eager"
-          src={heroImage}
-          alt="Shipping containers at port"
-          className="w-full h-full object-cover"
-        /> */}
+
+      <div className="absolute inset-0 z-0">
+
         <video
           autoPlay
           loop
