@@ -77,7 +77,7 @@ const Hero = () => {
           muted
           playsInline
           preload="none"
-          poster="/shipcom.webp"
+          //poster="/shipcom.webp"
           className="w-full h-full object-cover"
         >
           <source src={heroImage} type="video/mp4" />
